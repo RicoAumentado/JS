@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+
+    Dollar to Peso <span id="N"></span><br>
+    <span id="Conversion"></span>
+    <script>
+        // let n = document.getElementById("N");
+        // let number = prompt("Enter number: ");
+        // let rem = document.getElementById('Remarks');
+        // N.innerHTML = '<i>' + number + '</i>';
+        // Remarks.textContent = parseInt(number) % 2 == 0 ?  'Even': 'odd';
+
+        // let element = document.getElementById("myElement");
+        // let htmlContent = element.innerHTML;
+        // console.log(htmlContent); // Output: Initial content
+
+        //Make a program that will identify the vowels;
+        const usdAmount = 100;
+            const exchangeRate = 57.66;
+            const phpAmount = usdAmount * exchangeRate;
+
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auditor</title>
+  <style> body {
+    margin-left: 60px;
+  }
+  </style>
+</head>
+<body>
+
+  <h4>LAB ACTIVITY SET B <br>
+    Dollar to Peso Conversion
+    Name: Auditor, John Rico A.
+  </h2>
+  <div>
+  <input type="Number" id="dollar" placeholder="Enter Number"><br>
+  <button id="convertBtn">Convert</button>
+  <p id="result"></p>
+  </div>
+
+  
+  <script>
+
+    const convertToPeso = (usd) => 
+      usd > 0 ? `₱${(usd * 60).toFixed(2)}` : "Mag enter ka valid amount";
+
+    document.getElementById("convertBtn").addEventListener("click", () => {
+      const usd = parseFloat(document.getElementById("dollar").value);
+      //const usds = parseInt(document.getElementsById("Dollar").value);
+      document.getElementById("result").textContent = convertToPeso(usd);
+    });
+
+
+  </script>
+
+
+</body>
+</html>
