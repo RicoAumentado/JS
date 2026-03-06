@@ -70,4 +70,6 @@ let LastName = ["Auditor","Villamiel","Malaran","Malaran2"];
 let ages = [22, 21, 20, 19];
 
 alert(firstName[0] + " " + LastName[0] + " is " + ages[0] + " years old.");
-
+alert(firstName[1] + " " + LastName[1] + " is " + ages[1] + " years old.");
+alert(firstName[2] + " " + LastName[2] + " is " + ages[2] + " years old.");
+alert(firstName[3] + " " + LastName[3] + " is " + ages[3] + " years old.");
